@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".calrender">
+
+    <!--
+    datePicker - 날짜를 선택하는 달력
+    viewDatePick - 선택한 날짜를 보여주는 textView
+    edtDiary - 선택한 날짜의 일기를 쓰거나 기존에 저장된 일기가 있다면 보여주고 수정하는 영역
+    btnSave - 선택한 날짜의 일기 저장 및 수정(덮어쓰기) 버튼
+     -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp" />
+<!--        날짜와 날짜 선택할수있는 판이 나옴-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5sp">
+
+
+<!--        날짜 띄우기-->
+        <TextView
+            android:id="@+id/viewDatePick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#98CCE3"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+
+        <EditText
+            android:backgroundTint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:id="@+id/edtDiary"
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:background="#DDDDDD"
+            android:textColor="@color/black"
+            android:ems="10"
+            android:gravity="start|center_vertical"
+            android:inputType="text|textMultiLine|textCapSentences"
+            android:padding="7sp"
+            android:text="" />
+
+        <Button
+
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="저장" />
+    </LinearLayout>
+</LinearLayout>

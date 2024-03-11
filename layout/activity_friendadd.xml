@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".Friendadd"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#808080"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="424dp"
+            android:layout_height="64dp">
+
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/friendadd1" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="친구추가"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/qr1" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/addnumber" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/idadd" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="76dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/recommendationfriend" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--이렇게 각각 안만들면 하나의 main xml안에 다 만들고(프레임
+레이아웃으로) 거기에 애니매이션 효과 집어넣어서 해야함. 그러면
+너무 복잡하니 따로따로 만들도-->

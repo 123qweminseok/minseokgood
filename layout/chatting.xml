@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="독서감상문"
+    android:textSize="40dp"
+    android:gravity="center"
+    ></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="?attr/actionBarSize" />
+<!--리사이클러뷰가 비어있을때 보여지는 이미지-->
+    <TextView
+        android:id="@+id/no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.4"
+        android:text="No Data."
+        android:textSize="20sp"
+        android:visibility="gone" />
+<!--리사이클러뷰가 비어있을때 나타낼 이미지-->
+
+
+    <EditText
+
+        android:id="@+id/editTextText3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+android:textColor="@color/black"
+        android:ems="10"
+        android:background="#DDDDDD"
+        android:inputType="text"
+        android:text="Name" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+
+</LinearLayout>

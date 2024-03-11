@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+
+        android:id="@+id/delete_all"
+        android:title="Delete All"
+        android:icon="@drawable/log"
+        app:showAsAction="never"
+
+        />
+<!--메뉴 폴더에 있는것들은 화면의 제일 위쪽에 뜬다!-->
+</menu>

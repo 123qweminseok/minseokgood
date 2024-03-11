@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab1"
+        android:enabled="true"
+        android:title="편집"
+        ></item>
+
+    <item
+        android:id="@+id/tab2"
+        android:enabled="true"
+        android:title="친구 관리"
+        ></item>
+
+    <item
+        android:id="@+id/tab3"
+        android:enabled="true"
+        android:title="전체 설정"
+        ></item>
+
+</menu>
